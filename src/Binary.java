@@ -1,11 +1,5 @@
 public class Binary {
-        private int[] randArray;
-        private int[] sortedArray;
 
-        public Binary(){
-            this.randArray = new int[1000000]; // en ny array med storlek en miljon
-            this.sortedArray = new int[1000000];
-        }
     public static boolean binarySearch(int[] array, int key) {
         int first = 0;
         int last = array.length - 1;
@@ -23,7 +17,9 @@ public class Binary {
                 last = index -1;
                 continue;
             }
-                return false;
+            return false;
+
         }
     }
+
 }
