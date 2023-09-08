@@ -170,30 +170,8 @@ public class Benchmark {
             System.out.printf("%9.0f", (min / loop));
             System.out.printf("%9.2f", (min / loop) / (log(n)));
 
-          /*  min = Double.POSITIVE_INFINITY;
-            for (int i = 0; i < rounds; i++) {
-                long t0 = System.nanoTime();
-                findDuplicatesLinear(arrayUnSort,keyArrayUnsort, rounds);
-                long t1 = System.nanoTime();
-                double t = (t1 - t0);
-                if (t < min)
-                    min = t;
-            }*/
-
             System.out.printf("%15.0f", findDuplicatesLinear(arrayUnSort, arraySort2, rounds));
             System.out.printf("%15.0f", findDuplicatesLinear(arrayUnSort, arraySort2, rounds) / (n));
-
-
-          /*  min = Double.POSITIVE_INFINITY;
-
-            for (int i = 0; i < rounds; i++) {
-                long t0 = System.nanoTime();
-                findDuplBinary(arrayUnSort,arraySort);
-                long t1 = System.nanoTime();
-                double t = (t1 - t0);
-                if (t < min)
-                    min = t;
-            } */
 
             System.out.printf("%15.0f", findDuplBinary(arraySort, arrayUnSort, rounds));
             System.out.printf("%15.2f", findDuplBinary(arraySort, arrayUnSort, rounds) / (log(n)));
