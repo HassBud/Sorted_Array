@@ -7,7 +7,8 @@ public class Pointer {
         int indexKey = 0;
         while(indexArray < array.length && indexKey < keys.length){
             if(array[indexArray] == keys[indexKey]){
-                indexArray++;
+                indexKey++;
+                continue;
             }
             if (array[indexArray] < keys[indexKey]) {
                 indexArray++;
