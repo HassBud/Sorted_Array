@@ -16,7 +16,6 @@ public class Pointer {
             }
             if (array[indexArray] > keys[indexKey] ) {
                 indexKey++;
-
             }
         }
         return false;

@@ -108,7 +108,7 @@ public class Benchmark {
 
     public void bench() {
 
-        int[] sizes = {5,100, 200, 400, 800, 1600, 3200, 6400, 12800,};
+        int[] sizes = {100, 200, 400, 800, 1600, 3200, 6400, 12800,};
 
         System.out.printf("# searching through an array of length n, time in ns\n");
         System.out.printf("#%7s%10s%9s%10s%9s%10s%10s%10s%11s%11s%11s\n", "n", "lin unS", "lin S", "binary", " binary/log(n)", " lin dupl.", "  lin dup. /n", "  binary dupl.", "  binary dup./n*log(n)", "pointer", " pointer/n");
